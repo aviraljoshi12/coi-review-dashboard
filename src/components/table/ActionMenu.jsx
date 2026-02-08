@@ -39,7 +39,10 @@ function ActionMenu({ coi }) {
       {open && (
         <div className="absolute right-0 mt-1 w-[120px] bg-white border border-[#E7E9E9] rounded-[8px] shadow-sm z-20">
           <MenuItem label="View" onClick={() => navigate(`/coi/${coi.id}`)} />
-          <MenuItem label="Edit" onClick={() => navigate(`/coi/${coi.id}`)} />
+          <MenuItem
+            label="Edit"
+            onClick={() => navigate(`/coi/${coi.id}/edit`)}
+          />
           <MenuItem label="Delete" danger onClick={() => deleteCOI(coi.id)} />
         </div>
       )}

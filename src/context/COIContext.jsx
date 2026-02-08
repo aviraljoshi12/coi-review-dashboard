@@ -103,6 +103,12 @@ export function COIProvider({ children }) {
     ]);
   };
 
+  const updateCOI = (id, updates) => {
+    setCois((prev) =>
+      prev.map((coi) => (coi.id === id ? { ...coi, ...updates } : coi)),
+    );
+  };
+
   const bulkSendReminder = () => {
     setCois((prev) =>
       prev.map((c) =>
@@ -161,6 +167,7 @@ export function COIProvider({ children }) {
         setVisibleColumns,
         bulkSendReminder,
         hasPendingReminders,
+        updateCOI,
       }}
     >
       {children}
