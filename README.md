@@ -7,7 +7,7 @@ The application helps manage, review, and track insurance certificates for prope
 
 ## 🔗 Live Demo
 
-👉 **Live URL:** _(add your deployed link here)_
+👉 **Live URL:** https://coi-review-dashboard-jet.vercel.app/
 
 ---
 
@@ -119,7 +119,7 @@ The application helps manage, review, and track insurance certificates for prope
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/aviraljoshi12/coi-review-dashboard.git
 ```
 
 ### 2️⃣ Install dependencies
